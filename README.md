@@ -28,7 +28,7 @@ NHKラジオ第２ ロシア語番組録音
 　録音時間（必要あれば）とデータ保存フォルダを指定します。
  ```
 # 録音時間設定値 ： 15分
-# REC_TIME="00:15:00" 
+REC_TIME="00:15:00" 
 
 # 録音データ保存フォルダを設定：絶対 PATH を指定
 MY_OUTDIR="/your/directory/name/NHKロシア語講座"
@@ -51,6 +51,9 @@ MY_OUTDIR="/your/directory/name/NHKロシア語講座"
 ※ 保存された **m4a** は音声データフォーマットであり、iTunes や通常のプレイヤーで視聴出来ます。 
 
 # 【注意】  
-録音データは著作権上私的利用のみに限定されていますのでご注意下さい。
+- 配信 URL は時期は不明ですが変更されています。  
+旧URL: "https://nhkradioakr2-i.akamaihd.net/hls/live/511929/1-r2/1-r2-01.m3u8"  
+新URL: "https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
+- 録音データは著作権上私的利用のみに限定されていますのでご注意下さい。
 
 
