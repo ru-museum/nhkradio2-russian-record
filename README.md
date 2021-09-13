@@ -37,12 +37,12 @@ MY_OUTDIR="/your/directory/name/NHKロシア語講座"
  ```
  # chmod 755 nhkradio2-russian-record.sh
  ```
-3. CRON に登録し毎日同時刻に起動させます。  
+3. CRON に登録し毎日同時刻(8:50)に起動させます。  
 \# vi /etc/crontab  
 **username** は、root 或いは使用するユーザー名です（無いとエラーが出ます）。
 ```
 # NHKまいにちロシア語：月-水【入門編】/ 木・金【応用編】8:50-9:05 (再)16:30-16:45 (前週)15:30-15:45
-50 8 * * 1-5 username bash /your/directory/name/NHKロシア語講座/nhk-radio-russian0850-0905.sh
+50 8 * * 1-5 username bash /your/directory/name/NHKロシア語講座/nhkradio2-russian-record.sh
  ```
 5. CRON を再起動させます。
  ```
