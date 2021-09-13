@@ -8,7 +8,7 @@ TITLE="NHKまいにちロシア語"
 # https://www.nhk.or.jp/radio/config/config_web.xml
 
 # 2021年更新
-M3U8URL="https://radio-stream.nhk.jp/hls/live/2023229/nhkradiruakr1/master.m3u8"
+M3U8URL="https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
 # 旧URL：上記で動作しない場合試して下さい。
 # M3U8URL="https://nhkradioakr2-i.akamaihd.net/hls/live/511929/1-r2/1-r2-01.m3u8"
 
