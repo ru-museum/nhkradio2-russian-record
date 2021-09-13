@@ -7,7 +7,7 @@ TITLE="NHKまいにちロシア語"
 # 放送波URL: 以下で取得出来ます（2021）。 
 # https://www.nhk.or.jp/radio/config/config_web.xml
 
-# ストリーミング配信先 URL
+# ストリーミング配信 URL
 M3U8URL="https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
 # 2021年9月現在 URL が変更されています。
 # 旧URL：上記で動作しない場合は試して下さい。
