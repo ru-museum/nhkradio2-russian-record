@@ -7,9 +7,10 @@ TITLE="NHKまいにちロシア語"
 # 放送波URL: 以下で取得出来ます（2021）。 
 # https://www.nhk.or.jp/radio/config/config_web.xml
 
-# 2021年更新
+# ストリーミング配信先 URL
 M3U8URL="https://radio-stream.nhk.jp/hls/live/2023501/nhkradiruakr2/master.m3u8"
-# 旧URL：上記で動作しない場合試して下さい。
+# 2021年9月現在 URL が変更されています。
+# 旧URL：上記で動作しない場合は試して下さい。
 # M3U8URL="https://nhkradioakr2-i.akamaihd.net/hls/live/511929/1-r2/1-r2-01.m3u8"
 
 # 曜日設定
@@ -21,8 +22,8 @@ DATE1=`date '+%m%d'`
 DATE2=`date '+%H:%M'`
 DATE="${YEAR}${DATE1}${_DAY}-${DATE2}"
 
-# 録音時間 ： 15分
-# REC_TIME="00:15:00" 
+# 録音時間設定 ： 15分
+REC_TIME="00:15:00" 
 
 # 録音データ保存フォルダ名：絶対PATHを指定
 MY_OUTDIR="/your/directory/name/NHKロシア語講座"
@@ -35,6 +36,6 @@ else
   COURCE="【入門編】"
 fi
 
-# 録音 ⇒ 保存処理: NHKまいにちロシア語【入門編】-20210913(月)-08:50.m4a
+# 録音 ⇒ 保存処理 ⇒ ファイル名: NHKまいにちロシア語【入門編】-20210913(月)-08:50.m4a
 # M4A: 音声ファイルのみのフォーマットで iTunes などで再生出来ます。
 ffmpeg -i "${M3U8URL}" -t "${REC_TIME}" -c copy "${MY_OUTDIR}/${TITLE}${COURCE}-${DATE}".m4a
