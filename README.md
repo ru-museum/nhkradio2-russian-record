@@ -55,7 +55,7 @@ MY_OUTDIR="/your/directory/name/NHKロシア語講座"
 ```
 sleep 38　  
 ```
-**(B)** 開始時刻を早める場合（稀なケース）： CRON で行います（再起動が必要）。  
+**(B)** 開始時刻を早める場合（稀なケース）： CRON で行います（CRON の再起動が必要）。  
 　録音開始時刻を**20秒**早める設定：開始時刻を**1分**早め（初期値：50 ⇒ 49）開始時刻まで**40秒** sleep させます。
 ```
 49 8 * * 1-5 sleep 40; username bash /your/directory/name/NHKロシア語講座/nhkradio2-russian-record.sh
