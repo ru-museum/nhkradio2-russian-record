@@ -25,6 +25,9 @@ DATE="${YEAR}${DATE1}${_DAY}-${DATE2}"
 # 録音時間設定 ： 15分
 REC_TIME="00:15:00" 
 
+# 録音開始時間調整： 秒
+sleep 0
+
 # 録音データ保存フォルダ名：絶対PATHを指定
 MY_OUTDIR="/your/directory/name/NHKロシア語講座"
 
