@@ -42,3 +42,5 @@ fi
 # 録音 ⇒ 保存処理 ⇒ ファイル名: NHKまいにちロシア語【入門編】-20210913(月)-08:50.m4a
 # M4A: 音声ファイルのみのフォーマットで iTunes などで再生出来ます。
 ffmpeg -i "${M3U8URL}" -t "${REC_TIME}" -c copy "${MY_OUTDIR}/${TITLE}${COURSE}-${DATE}".m4a
+
+exit
