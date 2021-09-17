@@ -2,7 +2,8 @@
 NHKラジオ第２ ロシア語番組録音
 
 - これはNHKラジオ第２放送の「 ロシア語のラジオ番組」を**自動録音**するものです。
-   - [ロシア語の番組案内](https://www2.nhk.or.jp/gogaku/russian/)  
+ 
+- [ロシア語の番組案内](https://www2.nhk.or.jp/gogaku/russian/)  
      - [まいにちロシア語（入門編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=0956_01)  
      - [まいにちロシア語（応用編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=4414_01)
 
@@ -61,6 +62,9 @@ sleep 36　
 **(B)** 開始時刻を早める場合（稀なケース）： CRON で行います（CRON の再起動が必要）。  
 　例：録音開始時刻を**20秒**早める：開始時刻を**1分**早め（初期値：50 ⇒ 49）開始時刻まで**40秒** sleep させます。
 ```
+sleep 40
+
+# CRON
 49 8 * * 1-5 sleep 40; username bash /your/directory/name/NHKロシア語講座/nhkradio2-russian-record.sh
 ```
 
