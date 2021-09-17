@@ -3,8 +3,8 @@ NHKラジオ第２ ロシア語番組録音
 
 - これはNHKラジオ第２放送の「 ロシア語のラジオ番組」を**自動録音**するものです。
    - [ロシア語の番組案内](https://www2.nhk.or.jp/gogaku/russian/)  
-   - [まいにちロシア語（入門編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=0956_01)  
-   - [まいにちロシア語（応用編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=4414_01)
+     - [まいにちロシア語（入門編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=0956_01)  
+     - [まいにちロシア語（応用編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=4414_01)
 
 ### NHKラジオ第2 番組表
  <table>
