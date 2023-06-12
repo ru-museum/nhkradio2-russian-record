@@ -31,15 +31,15 @@ sleep 0
 # 録音データ保存フォルダ名：絶対PATHを指定
 MY_OUTDIR="/your/directory/name/NHKロシア語講座"
 
-# 録音講座の振り分け：【入門編】【応用編】（番組表参照）
+# 録音講座の振り分け：【初級編】【応用編】（番組表参照）
 COURSE=""
 if [ "$DAY" -eq 4 -o "$DAY" -eq 5 ]; then
   COURSE="【応用編】"
 else
-  COURSE="【入門編】"
+  COURSE="【初級編】"
 fi
 
-# 録音 ⇒ 保存処理 ⇒ ファイル名: NHKまいにちロシア語【入門編】-20210913(月)-08:50.m4a
+# 録音 ⇒ 保存処理 ⇒ ファイル名: NHKまいにちロシア語【初級編】-20210913(月)-08:50.m4a
 # M4A: 音声ファイルのみのフォーマットで iTunes などで再生出来ます。
 ffmpeg -i "${M3U8URL}" -t "${REC_TIME}" -c copy "${MY_OUTDIR}/${TITLE}${COURSE}-${DATE}".m4a
 
