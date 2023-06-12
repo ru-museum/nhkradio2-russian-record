@@ -4,12 +4,12 @@ NHKラジオ第２ ロシア語番組録音
 - これはNHKラジオ第２放送の「 ロシア語のラジオ番組」を**自動録音**するものです。
  
 - [ロシア語の番組案内](https://www2.nhk.or.jp/gogaku/russian/)  
-     - [まいにちロシア語（入門編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=0956_01)  
+     - [まいにちロシア語（初級編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=0956_01)  
      - [まいにちロシア語（応用編）](https://www.nhk.or.jp/radio/ondemand/detail.html?p=4414_01)
 
-### NHKラジオ第2 番組表
+### NHKラジオ第2 番組表(2023-6)
  <table>
-   <tr><th colspan="2" align="left">まいにちロシア語 入門編</th></tr>
+   <tr><th colspan="2" align="left">まいにちロシア語 初級編</th></tr>
    <tr><td>放　送</td><td>月～水曜日　午前8:50～9:05</td></tr>
   <tr><td>再放送</td><td>同日 月～水曜日　午後4:30～4:45</td></tr>
   <tr><td>再放送</td><td>翌週 月～水曜日　午後3:30～3:45</td></tr>
@@ -42,7 +42,7 @@ MY_OUTDIR="/your/directory/name/NHKロシア語講座"
 \# vi /etc/crontab  
 **username** は、root 或いは使用するユーザー名です（無いとエラーが出ます）。
 ```
-# NHKまいにちロシア語：月-水【入門編】/ 木・金【応用編】8:50-9:05 (再)16:30-16:45 (前週)15:30-15:45
+# NHKまいにちロシア語：月-水【初級編】/ 木・金【応用編】8:50-9:05 (再)16:30-16:45 (前週)15:30-15:45
 50 8 * * 1-5 username bash /your/directory/name/NHKロシア語講座/nhkradio2-russian-record.sh
  ```
 5. CRON を再起動させます。
@@ -68,7 +68,21 @@ sleep 40
 49 8 * * 1-5 sleep 40; username bash /your/directory/name/NHKロシア語講座/nhkradio2-russian-record.sh
 ```
 
-※ 保存された **m4a** は音声データフォーマットであり、iTunes や通常のプレイヤーで視聴出来ます。 
+## 実動作前のテスト  
+1. 録音時間を**10秒**程度に設定します。
+ ```
+# 録音時間設定値 ： 10秒
+REC_TIME="00:00:10" 
+ ```
+2.  CRON の起動時刻を数分後に設定し再起動します。
+ ```
+# CRON
+49 8 * * 1-5 ……（略）
+ ```
+3. 「作業フォルダ」に講座名のフォルダと講座名の録音ファイルが保存されているかを確認して下さい。
+
+## 録音ファイル  
+- 保存された **m4a** は音声データフォーマットであり、iTunes や通常のプレイヤーで視聴出来ます。 
 
 # 【注意】  
 - 配信 URL は時期は不明ですが変更されています。  
