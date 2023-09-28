@@ -91,7 +91,9 @@ REC_TIME="00:00:10"
 ## 　Demo
 - 以下で公開用テンプレートをご覧頂けます（**/docs** を参照しています) 
 - サンプルのダミーファイル（【初級編】第55〜60課、【応用編】第1〜4課）を試聴出来ます。 
- 
+- 操作方法等は「視聴方法」に詳しく解説しています。
+- 10月からの新シリーズにデータ対応しました（index2023-10-3.htmlを開いて下さい）。
+  
 　　[GitHub Pages: nhkradio2-russian-record](https://ru-museum.github.io/nhkradio2-russian-record/)  
 　　[https://ru-museum.github.io/nhkradio2-russian-record/](https://ru-museum.github.io/nhkradio2-russian-record/)  
 
